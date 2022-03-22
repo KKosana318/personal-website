@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import HeaderTab from '../HeaderTab/HeaderTab.component';
@@ -6,18 +6,40 @@ import HeaderTab from '../HeaderTab/HeaderTab.component';
 import {HeaderContainer, InitialsContainer, OptionsContainer} from './Header.styles';
 
 const Header = (props) => {
-    let navigate = useNavigate()
-    let path = useLocation().pathname
+    const navigate = useNavigate()
+    const path = useLocation().pathname
+    
+    const [flipStyles, setFlipStyles] = useState(0)
+
+    function handleScroll(currentPath) {
+        let location = currentPath.path ? currentPath.path[1].location.pathname : currentPath // currentPath can be event object or string of path
+        let flip = window.scrollY > window.innerHeight - 50 ? true : false
+        flip = location === '/' ? flip : true
+        setFlipStyles(flip)
+    }
+
+    useEffect(() => { // forces header to re-render when loading new page
+        handleScroll(path)
+    })
+
+    useEffect(() => {
+        document.addEventListener("scroll", handleScroll)
+        return () => {document.removeEventListener("scroll", handleScroll)}
+    }, [])
+
+    // TODO: improve efficiency of scroll listener by stop listening if past certain height
+    // TODO: create css chunks to write less code for conditional styling on scroll
+    
 
     return (
-        <HeaderContainer>
-            <InitialsContainer onClick={() => navigate('')}>KK</InitialsContainer>
+        <HeaderContainer flip={flipStyles}>
+            <InitialsContainer flip={flipStyles} onClick={() => navigate('/')}>KK</InitialsContainer>
             <OptionsContainer>
-                <HeaderTab active={path === '/'}>Home</HeaderTab>
-                <HeaderTab active={path.includes('web-development')}>Web Development</HeaderTab>
-                <HeaderTab active={path.includes('past-work')}>Past Work</HeaderTab>
-                <HeaderTab active={path.includes('resume')}>Resume</HeaderTab>
-                <HeaderTab active={path.includes('contact')}>Contact</HeaderTab>
+                <HeaderTab flip={flipStyles} active={path === '/'}>Home</HeaderTab>
+                <HeaderTab flip={flipStyles} active={path.includes('web-development')}>Web Development</HeaderTab>
+                <HeaderTab flip={flipStyles} active={path.includes('past-work')}>Past Work</HeaderTab>
+                <HeaderTab flip={flipStyles} active={path.includes('resume')}>Resume</HeaderTab>
+                <HeaderTab flip={flipStyles} active={path.includes('contact')}>Contact</HeaderTab>
             </OptionsContainer>
         </HeaderContainer>
     )

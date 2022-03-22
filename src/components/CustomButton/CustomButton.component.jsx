@@ -2,10 +2,10 @@ import React from 'react';
 
 import { CustomButtonContainer } from './CustomButton.styles';
 
-const CustomButton = ({children}) => {
+const CustomButton = ({children, ...otherProps}) => {
     return (
-        <CustomButtonContainer>
-            {children}
+        <CustomButtonContainer {...otherProps}>
+            {children.toUpperCase()}
         </CustomButtonContainer>
     )
 }

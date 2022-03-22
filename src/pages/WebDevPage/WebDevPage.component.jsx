@@ -1,11 +1,13 @@
 import React from 'react';
 
+import {WebDevPageContainer} from './WebDevPage.styles'
+
 const WebDevPage = () => {
 
     return (
-        <div className="">
-            WebDevPage
-        </div>
+        <WebDevPageContainer>
+            <h1>Web Development</h1>
+        </WebDevPageContainer>
     )
 }
 
