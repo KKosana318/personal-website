@@ -14,7 +14,7 @@ const Header = (props) => {
     function handleScroll(currentPath) {
         let location = currentPath.path ? currentPath.path[1].location.pathname : currentPath // currentPath can be event object or string of path
         let flip = window.scrollY > window.innerHeight - 50 ? true : false
-        flip = location === '/' ? flip : true
+        flip = location === '/' || location.includes('services') ? flip : true
         setFlipStyles(flip)
     }
 
@@ -36,8 +36,8 @@ const Header = (props) => {
             <InitialsContainer flip={flipStyles} onClick={() => navigate('/')}>KK</InitialsContainer>
             <OptionsContainer>
                 <HeaderTab flip={flipStyles} active={path === '/'}>Home</HeaderTab>
-                <HeaderTab flip={flipStyles} active={path.includes('web-development')}>Web Development</HeaderTab>
-                <HeaderTab flip={flipStyles} active={path.includes('past-work')}>Past Work</HeaderTab>
+                <HeaderTab flip={flipStyles} active={path.includes('about')}>About</HeaderTab>
+                <HeaderTab flip={flipStyles} active={path.includes('services-+-portfolio')}>Services + Portfolio</HeaderTab>
                 <HeaderTab flip={flipStyles} active={path.includes('resume')}>Resume</HeaderTab>
                 <HeaderTab flip={flipStyles} active={path.includes('contact')}>Contact</HeaderTab>
             </OptionsContainer>
