@@ -21,7 +21,10 @@ const LargeScreenHeader = ({flipStyles, path}) => (
 const SmallScreenHeader = ({flipStyles, path}) => {
     const [toggleOptions, setToggleOptions] = useState(0)
 
-    console.log(flipStyles)
+    useEffect(() => {
+        setToggleOptions(0)
+    }, [path])
+
     return (
         <OptionsContainer>
             <div onClick={() => setToggleOptions(!toggleOptions)}>
