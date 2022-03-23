@@ -13,11 +13,8 @@ export const WebsiteCardContainer = styled.div`
     img {
         box-shadow: 0px 1px 12px #cfcfcf;
         max-height: 175px;
+        width: auto;
         overflow: hidden;
-    }
-
-    @media(max-width: 600px) {
-
     }
 `
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ContactPageContainer = styled.div`
-    height: ${window.innerHeight - 70}px;
+    height: ${window.innerHeight - 60}px;
     display: flex;
     flex-direction: column;
     justify-content: center;
