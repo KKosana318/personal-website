@@ -7,7 +7,7 @@ import Header from './components/Header/Header.component';
 import Footer from './components/Footer/Footer.component';
 import HomePage from './pages/HomePage/HomePage.component';
 import AboutPage from './pages/AboutPage/AboutPage.component';
-import ServicesPortfolioPage from './pages/WebDevPage/ServicesPortfolioPage.component';
+import ServicesPortfolioPage from './pages/ServicesPortfolioPage/ServicesPortfolioPage.component';
 import ResumePage from './pages/ResumePage/ResumePage.component';
 import ContactPage from './pages/ContactPage/ContactPage.component';
 import LegalPage from './pages/LegalPage/LegalPage.component';

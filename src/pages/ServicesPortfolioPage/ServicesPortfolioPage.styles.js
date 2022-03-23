@@ -36,7 +36,7 @@ export const TopTextContainer = styled.div`
     h1 {
         font-size: 80px;
         font-weight: 300;
-        margin-top: 18%;
+        margin-top: 22%;
         margin-bottom: 10px;
     }
 
@@ -54,22 +54,22 @@ export const PastWorkContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+`
 
-    h1 {
-        font-size: 60px;
-        font-weight: 300;
-        margin: 0;
-        margin-bottom: 15px;
-    }
+export const PastWorkH1 = styled.h1`
+    font-size: 60px;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 15px;
+`
 
-    p {
-        width: 70%;
-        font-size: 20px;
-        font-weight: 300;
-        margin: 0;
-        margin-bottom: 30px;
-        text-align: center;
-    }
+export const PastWorkP = styled.p`
+    width: 70%;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
 `
 
 export const WebsiteCardsContainer = styled.div`

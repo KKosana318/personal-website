@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
 export const AboutMeContainer = styled.div`
-    height: ${window.innerHeight - 190}px;
-    padding-top: 120px;
+    height: ${window.innerHeight - 70}px;
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: center;
     scroll-behavior: none;
 `

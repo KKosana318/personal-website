@@ -1,11 +1,13 @@
 import React from 'react';
 
+import { ContactPageContainer } from './ContactPage.styles';
+
 const ContactPage = () => {
 
     return (
-        <div className="">
-            ContactPage
-        </div>
+        <ContactPageContainer>
+            <h1>Contact Me</h1>
+        </ContactPageContainer>
     )
 }
 
