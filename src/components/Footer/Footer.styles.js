@@ -8,7 +8,7 @@ export const FooterContainer = styled.div`
     align-items: center;
     height: 70px;
     padding: 0 2%;
-    width: ${({transparent}) => transparent ? `96%` : ``};
+    width: ${({transparent}) => transparent ? `96%` : `96%`};
     color: rgb(168, 168, 168);
     font-size: 16px;    
     background-color: ${({transparent}) => transparent ? `` : `white`};

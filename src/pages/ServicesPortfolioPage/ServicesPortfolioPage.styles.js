@@ -32,11 +32,13 @@ export const TopTextContainer = styled.div`
     flex-direction: column;
     align-items: center;
     color: white;
+    text-align: center;
+
 
     h1 {
         font-size: 80px;
         font-weight: 300;
-        margin-top: 22%;
+        margin-top: 40vh;
         margin-bottom: 10px;
     }
 
@@ -44,7 +46,16 @@ export const TopTextContainer = styled.div`
         font-size: 30px;
         font-weight: 300;
         margin: 0;
-        text-align: center;
+    }
+
+    @media(max-width: 600px) {
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 25px;
+        }
     }
 `
 
@@ -61,6 +72,10 @@ export const PastWorkH1 = styled.h1`
     font-weight: 300;
     margin: 0;
     margin-bottom: 15px;
+
+    @media(max-width:600px) {
+        font-size: 40px;
+    }
 `
 
 export const PastWorkP = styled.p`
@@ -70,6 +85,10 @@ export const PastWorkP = styled.p`
     margin: 0;
     margin-bottom: 30px;
     text-align: center;
+
+    @media(max-width:600px) {
+        font-size: 16px;
+    }
 `
 
 export const WebsiteCardsContainer = styled.div`

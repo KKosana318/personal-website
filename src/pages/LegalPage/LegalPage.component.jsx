@@ -10,7 +10,11 @@ const LegalPage = () => {
             <br />
             Code on screen background photo on Services + Portfolio page: <a href='https://www.pexels.com/photo/code-on-a-screen-4383298/'>Photo by Markus Spiske from Pexels</a>
             <br />
-            Down arrow icon on Services + Portfolio page: <a href='https://fonts.google.com/icons'>Google Icons</a>
+            Open in New Tab icon on Services + Portfolio page: <a href='https://fonts.google.com/icons'>Google Icons</a>
+            <br />
+            Phone icon on Contact page: <a href='https://fonts.google.com/icons'>Google Icons</a>
+            <br />
+            Email icon on Contact page: <a href='https://fonts.google.com/icons'>Google Icons</a>
         </LegalPageContainer>
     )
 }

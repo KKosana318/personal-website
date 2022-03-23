@@ -23,7 +23,7 @@ const HomePage = () => {
          left: 0,
          behavior: "instant"
        });
-   }, [])
+    }, [])
 
     return (
         <HomePageContainer>

@@ -7,6 +7,7 @@ export const HomePageContainer = styled.div`
 export const LandingContainer = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     color: white;
@@ -16,13 +17,9 @@ export const LandingContainer = styled.div`
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-image: linear-gradient(rgba(0, 40, 60), rgba(0,51,93), rgba(0, 40, 70)); */
-
-  
     
     h1 {
         margin: 0;
-        margin-top: 18%;
         font-size: 80px;
         font-weight: 300;
     }
@@ -31,10 +28,21 @@ export const LandingContainer = styled.div`
         font-weight: 300;
         margin-top: 10px;
         font-size: 30px;
+        width: 90%;
     }
 
     image {
         opacity: 10%;
+    }
+
+    @media(max-width: 800px) {
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
     }
 `
 
