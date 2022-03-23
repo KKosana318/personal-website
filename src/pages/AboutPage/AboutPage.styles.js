@@ -8,11 +8,13 @@ export const AboutMeContainer = styled.div`
     justify-content: center;
     scroll-behavior: none;
     /* border: 1px solid red; */
-    overflow-x: hidden;
+    overflow: hidden;
 
     @media(max-width: 1400px) {
+        padding-top: 70px;
         height: 1000px;
     }
+
 `
 
 export const AboutMeImageAndInfoContainer = styled.div`
@@ -20,7 +22,6 @@ export const AboutMeImageAndInfoContainer = styled.div`
     display: flex;
     justify-content: center;
     gap: 5%;
-    /* border: 1px solid red; */
 
     img {
         height: auto;
@@ -37,8 +38,6 @@ export const AboutMeImageAndInfoContainer = styled.div`
     }
 
     @media(max-width: 800px) {
-        padding-top: 70px;
-
         img {
             max-width: 200px;
             max-height: 200px;
