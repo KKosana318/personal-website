@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 
 import WebsiteCard from '../../components/WebsiteCard/WebsiteCard.component';
 

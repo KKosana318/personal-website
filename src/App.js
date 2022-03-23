@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route} from 'react-router-dom';
 
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.component'
 

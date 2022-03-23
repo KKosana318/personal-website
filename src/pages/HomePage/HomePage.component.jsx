@@ -1,7 +1,5 @@
 import React, {useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
 
-import CustomButton from '../../components/CustomButton/CustomButton.component'
 
 // background images (not being used)
 // import KesavPic1 from '../../assets/kesav-pic-1.jpeg'
@@ -10,7 +8,6 @@ import CustomButton from '../../components/CustomButton/CustomButton.component'
 // import KesavPic4 from '../../assets/kesav-pic-4.jpeg'
 
 import BackgroundImage1 from '../../assets/background-image.jpg'
-import Headshot from '../../assets/headshot.png'
 import GitHubICon from '../../assets/github-icon.png'   
 import LinkedInIcon from '../../assets/linkedin-icon.png'
 

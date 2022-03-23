@@ -12,7 +12,7 @@ const Footer = () => {
     useEffect(() => { // forces header to re-render when loading new page
         let toggle = path === '/' ? true : false
         setTransparent(toggle)
-    })
+    }, [path])
 
     return (
         <FooterContainer transparent={transparent}>
