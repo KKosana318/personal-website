@@ -2,8 +2,7 @@ import styled from 'styled-components'
 
 export const LegalPageContainer = styled.div`
     height: ${window.innerHeight - 170}px;
-    padding-top: 100px;
-    padding-left: 50px;
+    padding: 100px 50px 0;
     font-size: 14px;
 
     * {
