@@ -12,6 +12,11 @@ export const WebsiteCardContainer = styled.div`
 
     img {
         box-shadow: 0px 1px 12px #cfcfcf;
+        max-width: 100%fit-content;
+    }
+
+    @media(max-width: 600px) {
+
     }
 `
 
