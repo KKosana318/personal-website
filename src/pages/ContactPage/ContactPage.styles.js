@@ -11,12 +11,12 @@ export const ContactPageContainer = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    max-width: 90%fit-content;
 
     h1 {
         font-size: 60px;
         font-weight: 300;
         margin: 0;
+        max-width: 80%;
     }
 
     h2 {
@@ -25,9 +25,12 @@ export const ContactPageContainer = styled.div`
         margin: 0;
         margin-bottom: 40px;
         font-weight: 300;
+        max-width: 80%;
     }
 
     @media(max-width: 800px) {
+        padding-top: 70px; 
+
         h1 {
             font-size: 40px;
         }
