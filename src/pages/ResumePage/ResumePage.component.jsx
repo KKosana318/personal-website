@@ -15,7 +15,7 @@ const ResumePage = () => {
         <ResumePageContainer>
             <h1>Resume</h1>
             <embed 
-                src="https://drive.google.com/file/d/1zeaSNcsCjvFl0jKzFaRXWbrzDm5BQtK6/preview" 
+                src="https://drive.google.com/file/d/1hi0uNvtZasu5sHVrwqaBr8HqcpSWAC8n/preview" 
                 frameborder="0" 
                 width="60%" 
                 height="1000px"
