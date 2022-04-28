@@ -27,8 +27,7 @@ const ServicesPortfolioPage = () => {
         <ServicesPortfolioPageContainer>
             <LandingContainer background={CodeBackground}> 
                 <TopTextContainer>
-                    <h1>What I Do</h1>
-                    <p>I develop websites for mainly <b>small businesses</b> and <b>individuals</b> at an incredibly <b>fast</b> pace and for an <b>affordable</b> cost.</p>
+                    <h1>Past Work</h1>
                 </TopTextContainer>
                 <DownArrowContainer>
                     <DownArrow onClick={scrollToAboutMe}/>

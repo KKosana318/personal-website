@@ -24,7 +24,7 @@ function App() {
           <Routes>
             <Route index element={<HomePage />} />
             <Route path='about' element={<AboutPage />} />
-            <Route path='services-+-portfolio' element={<ServicesPortfolioPage />} />
+            <Route path='past-work' element={<ServicesPortfolioPage />} />
             <Route path='resume' element={<ResumePage />} />
             <Route path='contact' element={<ContactPage />} />
             <Route path='legal' element={<LegalPage />} />

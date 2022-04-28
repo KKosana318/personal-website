@@ -26,7 +26,7 @@ const HomePage = () => {
         <HomePageContainer>
             <LandingContainer background={BackgroundImage1}>
                 <h1>I'm Kesav Kosana.</h1>
-                <h2>I'm studying Computer Science at UCLA and I do freelance web development.</h2>
+                <h2>I'm studying Computer Science at UCLA.</h2>
                 <LinksContainer>
                     <a href='https://github.com/KKosana318/' target="_blank" rel="noopener noreferrer">
                         <img to='' height='30px' src={GitHubICon} alt='GitHub' />

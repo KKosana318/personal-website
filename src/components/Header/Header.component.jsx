@@ -12,7 +12,7 @@ const LargeScreenHeader = ({flipStyles, path}) => (
     <OptionsContainer>
         <HeaderTab flip={flipStyles} active={path === '/'}>Home</HeaderTab>
         <HeaderTab flip={flipStyles} active={path.includes('about')}>About</HeaderTab>
-        <HeaderTab flip={flipStyles} active={path.includes('services-+-portfolio')}>Services + Portfolio</HeaderTab>
+        <HeaderTab flip={flipStyles} active={path.includes('past-work')}>Past Work</HeaderTab>
         <HeaderTab flip={flipStyles} active={path.includes('resume')}>Resume</HeaderTab>
         <HeaderTab flip={flipStyles} active={path.includes('contact')}>Contact</HeaderTab>
     </OptionsContainer>
@@ -34,7 +34,7 @@ const SmallScreenHeader = ({flipStyles, path}) => {
                 <OptionsNoIconContainer flip={flipStyles}>
                     <HeaderTab small={true} flip={flipStyles} active={path === '/'}>Home</HeaderTab>
                     <HeaderTab small={true} flip={flipStyles} active={path.includes('about')}>About</HeaderTab>
-                    <HeaderTab small={true} flip={flipStyles} active={path.includes('services-+-portfolio')}>Services + Portfolio</HeaderTab>
+                    <HeaderTab small={true} flip={flipStyles} active={path.includes('past-work')}>Past Work</HeaderTab>
                     <HeaderTab small={true} flip={flipStyles} active={path.includes('resume')}>Resume</HeaderTab>
                     <HeaderTab small={true} flip={flipStyles} active={path.includes('contact')}>Contact</HeaderTab>
                 </OptionsNoIconContainer>
@@ -63,7 +63,7 @@ const Header = (props) => {
     function handleScroll(currentPath) {
         let location = currentPath.path ? currentPath.path[1].location.pathname : currentPath // currentPath can be event object or string of path
         let flip = window.scrollY > window.innerHeight - 50 ? true : false
-        flip = location === '/' || location.includes('services') ? flip : true
+        flip = location === '/' || location.includes('past-work') ? flip : true
         setFlipStyles(flip)
     }
 
