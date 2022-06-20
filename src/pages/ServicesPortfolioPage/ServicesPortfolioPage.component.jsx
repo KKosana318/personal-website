@@ -35,7 +35,6 @@ const ServicesPortfolioPage = () => {
             </LandingContainer>
             <PastWorkContainer id='services-portfolio-past-work-container'>
                 <PastWorkH1>Past Work</PastWorkH1>
-                <PastWorkP>I develop websites using a variety of technologies including Wix, SquareSpace, WordPress, Python, and React.js (a programming language used to build websites by companies such as Facebook).</PastWorkP>
                 <br />
                 <WebsiteCardsContainer>
                     {ProjectData.map(({id, ...otherProps}) => 

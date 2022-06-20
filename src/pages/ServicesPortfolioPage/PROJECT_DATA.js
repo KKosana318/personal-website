@@ -1,17 +1,17 @@
 const PROJECT_DATA = [
     {
         id: 1,
+        title: 'Unhinged Dating App',
+        url: 'https://github.com/KKosana318/UnhingedDatingApp/',
+        description: 'Created the backend of a dating app that automatically matches users based on common traits. Focused on optimizing algorithms to efficiently process large datasets.',
+        technologies: 'C++.'
+    },
+    {
+        id: 2,
         title: 'Intellegym',
         url: 'https://www.intellegym.com/',
         description: 'Intellegym is an online ACT/SAT tutoring company.',
         technologies: 'SquareSpace, HTML, CSS.'
-    },
-    {
-        id: 2,
-        title: 'Superior Energy Group',
-        url: 'https://www.superiorenergy.tech/',
-        description: 'Superior Energy Group is a solar energy and home automation company.',
-        technologies: 'Wix, HTML, CSS.'
     },
     {
         id: 3,
