@@ -4,7 +4,6 @@ import {ReactComponent as LinkIcon} from '../../assets/open-in-new.svg'
 import CodingImage from '../../assets/coding-image.png'
 import IntellegymImage from '../../assets/intellegym-website.png'
 import CrwnImage from '../../assets/crwn-website.png'
-import SuperiorImage from '../../assets/superior-website.png'
 import PersonalImage from '../../assets/personal-website.png'
 
 import { WebsiteCardContainer, HeaderContainer, BodyTextContainer } from './WebsiteCard.styles';

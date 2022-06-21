@@ -7,7 +7,7 @@ import ProjectData from './PROJECT_DATA'
 import {ReactComponent as DownArrow} from '../../assets/down-arrow.svg'
 import CodeBackground from '../../assets/code-background.jpg'
 
-import {ServicesPortfolioPageContainer, LandingContainer, DownArrowContainer, TopTextContainer, PastWorkContainer, PastWorkH1, PastWorkP, WebsiteCardsContainer} from './ServicesPortfolioPage.styles'
+import {ServicesPortfolioPageContainer, LandingContainer, DownArrowContainer, TopTextContainer, PastWorkContainer, PastWorkH1, WebsiteCardsContainer} from './ServicesPortfolioPage.styles'
 
 const ServicesPortfolioPage = () => {
 
